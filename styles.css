@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(39, 134, 182);
+}
+.box{
+    width: 100px;
+    height: 100px;/*Si tiene alto definido no responderá al valor stretch*/
+    background-color: rgb(155, 193, 247);
+    padding: 20px;
+    border: 2px solid black;
+    margin: 1rem;
+    
+    
+}
+.flex-container{
+    height: 600px;
+    display: flex; /*el contenedor debe ser flex para que sus hijos se vuelvan flexibles*/
+    flex-direction: row;/*con esta propiedad definimos dirección y sentido del eje principal*/ 
+   
+    justify-content: center;/*con esta propiedad alineamos los ítems en el eje principal*/
+    align-items: center;/*con esta propiedad alineamos los ítems en el eje secundario*/
+}
+.c2{
+    align-self: flex-end;/*con esta propiedad definimos un comportamiento personalizado para un elemento*/
+}
+.c4{
+    order:-1; /*con esta propiedad cambiamos el orden de un item segun el indice, acepta valores negativos y positivos, por default el valor es 0*/
+}
+
+
